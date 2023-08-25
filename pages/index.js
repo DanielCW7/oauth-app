@@ -2,8 +2,10 @@
 
 const homePage = () => {
     return (
-        <h1> homepage </h1>
-        // does this need to be the login page first?
+        <div>
+            <h1> homepage </h1>
+            <p> content will display here once the user logs in </p>            
+        </div>
     )
 }
 
