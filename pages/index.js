@@ -1,10 +1,11 @@
-
+import Link from "next/link";
+import GithubBtn from "@/components/githubBtn";
 
 const homePage = () => {
     return (
-        <div>
-            <h1> homepage </h1>
-            <p> content will display here once the user logs in </p>            
+        <div className="flex flex-col justify-center border-8 h-screen">
+            <h1 className="text-center"> Login page is the homepage by default </h1>
+            <GithubBtn />         
         </div>
     )
 }
