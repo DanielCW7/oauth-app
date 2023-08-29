@@ -1,4 +1,3 @@
-import Link from "next/link";
 import GithubBtn from "@/components/githubBtn";
 
 const homePage = () => {

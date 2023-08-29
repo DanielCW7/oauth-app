@@ -1,5 +1,4 @@
 
-
 const Dashboard = () => {
     return (
         <div className="flex flex-col justify-center border-8 h-screen">
