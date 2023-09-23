@@ -7,15 +7,14 @@ export default function App({
   pageProps: { session, ...pageProps },
 }) {
 
+  console.log("session: ", session)
   return (
-    <>
-      <Nav />
       <SessionProvider session={session}>
+        <Nav />
         {/* checks for a session before displaying the nav */}
          
         <Component {...pageProps} />
       </SessionProvider>    
-    </>
 
     )
 }
