@@ -1,16 +1,21 @@
-// pages/_app.js
+import Nav from '@/components/nav';
+import '../styles/globals.css';
+import { SessionProvider, getSession } from "next-auth/react";
 
-import '../styles/tailwind.css'; // Import your global styles here
-import Link from 'next/link';
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
 
-function MyApp({ Component, pageProps }) {
   return (
     <>
-        <Component {...pageProps} /> 
-        {/* temporary nav for fast page nav */}
-
+      <Nav />
+      <SessionProvider session={session}>
+        {/* checks for a session before displaying the nav */}
+         
+        <Component {...pageProps} />
+      </SessionProvider>    
     </>
-  );
-}
 
-export default MyApp;
+    )
+}

@@ -7,7 +7,7 @@ const GithubBtn = () => {
     } 
 
     return (
-        <div className="text-center m-2">
+        <div className="text-center m-2 border-8">
             <button className="border-2 py-2 px-4 rounded" onClick={githubHandleSignIn}> Sign in with Github </button>
         </div>
     )
